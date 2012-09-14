@@ -15,6 +15,12 @@
 		CE4CAD141602F74F00141FDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD131602F74F00141FDF /* AppDelegate.m */; };
 		CE4CAD171602F74F00141FDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD161602F74F00141FDF /* ViewController.m */; };
 		CE4CAD1A1602F74F00141FDF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD181602F74F00141FDF /* ViewController.xib */; };
+		CE4CAD2616031D4100141FDF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4CAD2516031D4100141FDF /* AVFoundation.framework */; };
+		CE4CAD2816031D4900141FDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4CAD2716031D4900141FDF /* CoreData.framework */; };
+		CE4CAD2B1603208200141FDF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD291603208200141FDF /* Model.xcdatamodeld */; };
+		CE4CAD2F1603379300141FDF /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD2D1603379300141FDF /* settingViewController.m */; };
+		CE4CAD301603379300141FDF /* settingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD2E1603379300141FDF /* settingViewController.xib */; };
+		CE4CAD391603402400141FDF /* name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD381603402400141FDF /* name.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,13 @@
 		CE4CAD151602F74F00141FDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE4CAD161602F74F00141FDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE4CAD191602F74F00141FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CE4CAD2516031D4100141FDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE4CAD2716031D4900141FDF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE4CAD2A1603208200141FDF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CE4CAD2C1603379300141FDF /* settingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewController.h; sourceTree = "<group>"; };
+		CE4CAD2D1603379300141FDF /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
+		CE4CAD2E1603379300141FDF /* settingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingViewController.xib; sourceTree = "<group>"; };
+		CE4CAD381603402400141FDF /* name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4CAD2816031D4900141FDF /* CoreData.framework in Frameworks */,
+				CE4CAD2616031D4100141FDF /* AVFoundation.framework in Frameworks */,
 				CE4CAD041602F74F00141FDF /* UIKit.framework in Frameworks */,
 				CE4CAD061602F74F00141FDF /* Foundation.framework in Frameworks */,
 				CE4CAD081602F74F00141FDF /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +82,8 @@
 		CE4CAD021602F74F00141FDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE4CAD2716031D4900141FDF /* CoreData.framework */,
+				CE4CAD2516031D4100141FDF /* AVFoundation.framework */,
 				CE4CAD031602F74F00141FDF /* UIKit.framework */,
 				CE4CAD051602F74F00141FDF /* Foundation.framework */,
 				CE4CAD071602F74F00141FDF /* CoreGraphics.framework */,
@@ -77,11 +94,15 @@
 		CE4CAD091602F74F00141FDF /* oto_ren */ = {
 			isa = PBXGroup;
 			children = (
+				CE4CAD291603208200141FDF /* Model.xcdatamodeld */,
 				CE4CAD121602F74F00141FDF /* AppDelegate.h */,
 				CE4CAD131602F74F00141FDF /* AppDelegate.m */,
 				CE4CAD151602F74F00141FDF /* ViewController.h */,
 				CE4CAD161602F74F00141FDF /* ViewController.m */,
 				CE4CAD181602F74F00141FDF /* ViewController.xib */,
+				CE4CAD2C1603379300141FDF /* settingViewController.h */,
+				CE4CAD2D1603379300141FDF /* settingViewController.m */,
+				CE4CAD2E1603379300141FDF /* settingViewController.xib */,
 				CE4CAD0A1602F74F00141FDF /* Supporting Files */,
 			);
 			path = oto_ren;
@@ -90,6 +111,7 @@
 		CE4CAD0A1602F74F00141FDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE4CAD381603402400141FDF /* name.jpg */,
 				CE4CAD0B1602F74F00141FDF /* oto_ren-Info.plist */,
 				CE4CAD0C1602F74F00141FDF /* InfoPlist.strings */,
 				CE4CAD0F1602F74F00141FDF /* main.m */,
@@ -151,6 +173,8 @@
 			files = (
 				CE4CAD0E1602F74F00141FDF /* InfoPlist.strings in Resources */,
 				CE4CAD1A1602F74F00141FDF /* ViewController.xib in Resources */,
+				CE4CAD301603379300141FDF /* settingViewController.xib in Resources */,
+				CE4CAD391603402400141FDF /* name.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +188,8 @@
 				CE4CAD101602F74F00141FDF /* main.m in Sources */,
 				CE4CAD141602F74F00141FDF /* AppDelegate.m in Sources */,
 				CE4CAD171602F74F00141FDF /* ViewController.m in Sources */,
+				CE4CAD2B1603208200141FDF /* Model.xcdatamodeld in Sources */,
+				CE4CAD2F1603379300141FDF /* settingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +294,7 @@
 				CE4CAD1C1602F74F00141FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CE4CAD1D1602F74F00141FDF /* Build configuration list for PBXNativeTarget "oto_ren" */ = {
 			isa = XCConfigurationList;
@@ -277,8 +303,23 @@
 				CE4CAD1F1602F74F00141FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE4CAD291603208200141FDF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE4CAD2A1603208200141FDF /* Model.xcdatamodel */,
+			);
+			currentVersion = CE4CAD2A1603208200141FDF /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE4CACF61602F74F00141FDF /* Project object */;
 }

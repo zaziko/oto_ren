@@ -11,10 +11,17 @@
 #import "ViewController.h"
 
 @implementation AppDelegate
+//Coredata関連
+@synthesize managedObjectContext=__managedObjectContext;
+@synthesize managedObjectModel=__managedObjectModel;
+@synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
 
 - (void)dealloc
 {
     [_window release];
+    [__managedObjectContext release];
+    [__managedObjectModel release];
+    [__persistentStoreCoordinator release];
     [_viewController release];
     [super dealloc];
 }
@@ -25,6 +32,7 @@
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
+
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,7 +61,93 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [self saveContext];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(void)saveContext
+{
+    NSError *error=nil;
+    NSManagedObjectContext *managedObjectContext=self.managedObjectContext;
+    if (managedObjectContext !=nil)
+    {
+        //エラーじゃなかったり変更があれば書き込む
+        if ([managedObjectContext hasChanges]&&![managedObjectContext save:&error])
+        {
+            NSLog(@"Unresolved error %@,%@",error,[error userInfo]);
+            abort();
+        }
+    }
+}
+
+
+-(NSManagedObjectContext *)managedObjectContext
+{
+    //インスタンスが作成済みならそれを返す
+    if (__managedObjectContext !=nil)
+    {
+        return __managedObjectContext;
+    }
+    
+    //シリアライズの情報を取得
+    NSPersistentStoreCoordinator *cordinator=[self persistentStoreCoordinator];
+    
+    if (cordinator !=nil)
+    {
+        __managedObjectContext=[[NSManagedObjectContext alloc]init];
+        [__managedObjectContext setPersistentStoreCoordinator:cordinator];
+    }
+    return __managedObjectContext;
+}
+
+
+-(NSManagedObjectModel *)managedObjectModel
+{
+    if (__managedObjectModel !=nil)
+    {
+        return __managedObjectModel;
+    }
+    
+    NSURL *modelURL=[[NSBundle mainBundle]URLForResource:@"Voice"
+                                           withExtension:@"momd"];
+    __managedObjectModel = [[NSManagedObjectModel alloc]initWithContentsOfURL:modelURL];
+    
+    
+    return __managedObjectModel;
+}
+
+-(NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+
+    if (__persistentStoreCoordinator !=nil)
+    {
+        return __persistentStoreCoordinator;
+    }
+    
+    NSURL *storeURL=[[self applicationDocumentsDirectory]URLByAppendingPathComponent:@"Voice.sqlite"];
+    
+    NSError *error=nil;
+    __persistentStoreCoordinator=[[NSPersistentStoreCoordinator alloc]
+                                  initWithManagedObjectModel:[self managedObjectModel]];
+    
+    if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                    configuration:nil
+                                                              URL:storeURL
+                                                          options:nil
+                                                            error:&error])
+    {
+        NSLog(@"unresolved error %@,%@",error,[error userInfo] );
+        abort();
+    }
+    
+    return __persistentStoreCoordinator;
+}
+
+-(NSURL *)applicationDocumentsDirectory
+{
+    return [[[NSFileManager defaultManager]
+             URLsForDirectory:NSDocumentDirectory
+                     inDomains:NSUserDomainMask]lastObject];
+
+}
 @end
