@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4CAD041602F74F00141FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4CAD031602F74F00141FDF /* UIKit.framework */; };
+		CE4CAD061602F74F00141FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4CAD051602F74F00141FDF /* Foundation.framework */; };
+		CE4CAD081602F74F00141FDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4CAD071602F74F00141FDF /* CoreGraphics.framework */; };
+		CE4CAD0E1602F74F00141FDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD0C1602F74F00141FDF /* InfoPlist.strings */; };
+		CE4CAD101602F74F00141FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD0F1602F74F00141FDF /* main.m */; };
+		CE4CAD141602F74F00141FDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD131602F74F00141FDF /* AppDelegate.m */; };
+		CE4CAD171602F74F00141FDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD161602F74F00141FDF /* ViewController.m */; };
+		CE4CAD1A1602F74F00141FDF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD181602F74F00141FDF /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE4CACFF1602F74F00141FDF /* oto_ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oto_ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4CAD031602F74F00141FDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE4CAD051602F74F00141FDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE4CAD071602F74F00141FDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE4CAD0B1602F74F00141FDF /* oto_ren-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "oto_ren-Info.plist"; sourceTree = "<group>"; };
+		CE4CAD0D1602F74F00141FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE4CAD0F1602F74F00141FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE4CAD111602F74F00141FDF /* oto_ren-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oto_ren-Prefix.pch"; sourceTree = "<group>"; };
+		CE4CAD121602F74F00141FDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE4CAD131602F74F00141FDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE4CAD151602F74F00141FDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE4CAD161602F74F00141FDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE4CAD191602F74F00141FDF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4CACFC1602F74F00141FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CAD041602F74F00141FDF /* UIKit.framework in Frameworks */,
+				CE4CAD061602F74F00141FDF /* Foundation.framework in Frameworks */,
+				CE4CAD081602F74F00141FDF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE4CACF41602F74F00141FDF = {
+			isa = PBXGroup;
+			children = (
+				CE4CAD091602F74F00141FDF /* oto_ren */,
+				CE4CAD021602F74F00141FDF /* Frameworks */,
+				CE4CAD001602F74F00141FDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4CAD001602F74F00141FDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CACFF1602F74F00141FDF /* oto_ren.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4CAD021602F74F00141FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CAD031602F74F00141FDF /* UIKit.framework */,
+				CE4CAD051602F74F00141FDF /* Foundation.framework */,
+				CE4CAD071602F74F00141FDF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE4CAD091602F74F00141FDF /* oto_ren */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CAD121602F74F00141FDF /* AppDelegate.h */,
+				CE4CAD131602F74F00141FDF /* AppDelegate.m */,
+				CE4CAD151602F74F00141FDF /* ViewController.h */,
+				CE4CAD161602F74F00141FDF /* ViewController.m */,
+				CE4CAD181602F74F00141FDF /* ViewController.xib */,
+				CE4CAD0A1602F74F00141FDF /* Supporting Files */,
+			);
+			path = oto_ren;
+			sourceTree = "<group>";
+		};
+		CE4CAD0A1602F74F00141FDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4CAD0B1602F74F00141FDF /* oto_ren-Info.plist */,
+				CE4CAD0C1602F74F00141FDF /* InfoPlist.strings */,
+				CE4CAD0F1602F74F00141FDF /* main.m */,
+				CE4CAD111602F74F00141FDF /* oto_ren-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE4CACFE1602F74F00141FDF /* oto_ren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4CAD1D1602F74F00141FDF /* Build configuration list for PBXNativeTarget "oto_ren" */;
+			buildPhases = (
+				CE4CACFB1602F74F00141FDF /* Sources */,
+				CE4CACFC1602F74F00141FDF /* Frameworks */,
+				CE4CACFD1602F74F00141FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oto_ren;
+			productName = oto_ren;
+			productReference = CE4CACFF1602F74F00141FDF /* oto_ren.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4CACF61602F74F00141FDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = zaziko;
+			};
+			buildConfigurationList = CE4CACF91602F74F00141FDF /* Build configuration list for PBXProject "oto_ren" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE4CACF41602F74F00141FDF;
+			productRefGroup = CE4CAD001602F74F00141FDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4CACFE1602F74F00141FDF /* oto_ren */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4CACFD1602F74F00141FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CAD0E1602F74F00141FDF /* InfoPlist.strings in Resources */,
+				CE4CAD1A1602F74F00141FDF /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4CACFB1602F74F00141FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4CAD101602F74F00141FDF /* main.m in Sources */,
+				CE4CAD141602F74F00141FDF /* AppDelegate.m in Sources */,
+				CE4CAD171602F74F00141FDF /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE4CAD0C1602F74F00141FDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4CAD0D1602F74F00141FDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE4CAD181602F74F00141FDF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4CAD191602F74F00141FDF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4CAD1B1602F74F00141FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE4CAD1C1602F74F00141FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4CAD1E1602F74F00141FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oto_ren/oto_ren-Prefix.pch";
+				INFOPLIST_FILE = "oto_ren/oto_ren-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE4CAD1F1602F74F00141FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oto_ren/oto_ren-Prefix.pch";
+				INFOPLIST_FILE = "oto_ren/oto_ren-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4CACF91602F74F00141FDF /* Build configuration list for PBXProject "oto_ren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4CAD1B1602F74F00141FDF /* Debug */,
+				CE4CAD1C1602F74F00141FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4CAD1D1602F74F00141FDF /* Build configuration list for PBXNativeTarget "oto_ren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4CAD1E1602F74F00141FDF /* Debug */,
+				CE4CAD1F1602F74F00141FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE4CACF61602F74F00141FDF /* Project object */;
+}
