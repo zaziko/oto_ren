@@ -21,6 +21,7 @@
 		CE4CAD2F1603379300141FDF /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAD2D1603379300141FDF /* settingViewController.m */; };
 		CE4CAD301603379300141FDF /* settingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD2E1603379300141FDF /* settingViewController.xib */; };
 		CE4CAD391603402400141FDF /* name.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE4CAD381603402400141FDF /* name.jpg */; };
+		CE725256160EED3900372CC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE725255160EED3900372CC1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE4CAD2D1603379300141FDF /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
 		CE4CAD2E1603379300141FDF /* settingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingViewController.xib; sourceTree = "<group>"; };
 		CE4CAD381603402400141FDF /* name.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = name.jpg; sourceTree = "<group>"; };
+		CE725255160EED3900372CC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		CE4CACF41602F74F00141FDF = {
 			isa = PBXGroup;
 			children = (
+				CE725255160EED3900372CC1 /* Default-568h@2x.png */,
 				CE4CAD091602F74F00141FDF /* oto_ren */,
 				CE4CAD021602F74F00141FDF /* Frameworks */,
 				CE4CAD001602F74F00141FDF /* Products */,
@@ -175,6 +178,7 @@
 				CE4CAD1A1602F74F00141FDF /* ViewController.xib in Resources */,
 				CE4CAD301603379300141FDF /* settingViewController.xib in Resources */,
 				CE4CAD391603402400141FDF /* name.jpg in Resources */,
+				CE725256160EED3900372CC1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
