@@ -38,7 +38,7 @@ static const NSTimeInterval kMaxRecordTime=10;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationLandscapeRight);
+    return (interfaceOrientation != UIInterfaceOrientationPortrait);
 }
 
 

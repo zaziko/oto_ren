@@ -40,7 +40,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (IBAction)pushBackButton:(id)sender
